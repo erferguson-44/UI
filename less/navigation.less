@@ -1,0 +1,48 @@
+// Navigation code here
+
+.whole-nav{
+    background:@nav-bg;
+    margin:2% 2% 0 2%;
+
+    .container-nav{
+        max-width:100%;
+        .DF();
+        flex-direction:column;
+        align-items: center;
+
+        h1{
+            padding-top:1%;
+        }
+
+        .bar-nav{
+            .displayFlex(space-between);
+            width:50%;
+            padding:1.5% 0;
+
+            @media @phone{
+                width:80%;
+            }
+
+            a{
+                text-decoration: none;
+                color:@header-font-color;
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+.mainIMG{
+    .displayFlex(center);
+    @media @phone{
+        margin:0 2%;
+    }
+
+    img{
+        border-radius:8px;
+
+        @media @phone{
+            border-radius:3px;
+        }
+    }
+}

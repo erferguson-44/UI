@@ -1,0 +1,27 @@
+// Mixins Here
+
+.displayFlex(@JC){
+    display:flex;
+    justify-content: @JC;
+}
+
+.DF(){
+    display:flex;
+}
+
+.button(@bg, @color){
+    background:@bg;
+    color:@color;
+    width:40%;
+    border-radius:10px;
+    text-align:center;
+    font-size:17px;
+    font-weight:bold;
+    padding:15px;
+
+    &:hover{
+        background:@wild-sand;
+        color:@ebony-clay;
+        border:1px solid @ebony-clay;
+    }
+}
