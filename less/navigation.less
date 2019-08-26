@@ -1,13 +1,49 @@
 // Navigation code here
+.header{
+  border:1px solid red;
+  .DF();
+  // flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+  h1{
+    text-shadow: // puts border around text in NAV
+		    -1px -1px 0 @portlandOrange,
+		    1px -1px 0 @portlandOrange,
+		    -1px 1px 0 @portlandOrange,
+		    1px 1px 0 @portlandOrange;
+  }
+
+  .navIMG{
+    .displayFlex(center);
+    width:70px;
+    @media @phone{
+        margin:0 2%;
+    }
+
+    img{
+        border-radius:8px;
+
+        @media @phone{
+            border-radius:3px;
+        }
+    }
+}
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: @nav-bg;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+
+    .navIMG{
+      // width:7px;
+    }
   }
   
   li {
@@ -16,18 +52,19 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: @font_color;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: @portlandOrange;
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: @font_color;
+    color:@outerSpace;
   }
 
 
