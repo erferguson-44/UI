@@ -131,11 +131,12 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: #FED90F;
 }
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #FFFFFF;
 }
 h1,
 h2,
@@ -177,7 +178,7 @@ img {
   }
 }
 .whole-nav {
-  background: #F6F6F6;
+  background: #107DC0;
   margin: 2% 2% 0 2%;
 }
 .whole-nav .container-nav {
