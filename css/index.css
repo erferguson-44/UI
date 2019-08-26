@@ -144,7 +144,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #FFFFFF;
 }
 h1 {
   font-size: 3.4rem;
@@ -180,6 +180,7 @@ img {
 .whole-nav {
   background: #107DC0;
   margin: 2% 2% 0 2%;
+  border-radius: 5px;
 }
 .whole-nav .container-nav {
   max-width: 100%;
@@ -189,6 +190,7 @@ img {
 }
 .whole-nav .container-nav h1 {
   padding-top: 1%;
+  text-shadow: -1px -1px 0 #F65132, 1px -1px 0 #F65132, -1px 1px 0 #F65132, 1px 1px 0 #F65132;
 }
 .whole-nav .container-nav .bar-nav {
   display: flex;

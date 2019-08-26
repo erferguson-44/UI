@@ -3,6 +3,7 @@
 .whole-nav{
     background:@nav-bg;
     margin:2% 2% 0 2%;
+    border-radius: 5px;
 
     .container-nav{
         max-width:100%;
@@ -12,6 +13,11 @@
 
         h1{
             padding-top:1%;
+            text-shadow: // puts border around text in NAV
+		    -1px -1px 0 @portlandOrange,
+		    1px -1px 0 @portlandOrange,
+		    -1px 1px 0 @portlandOrange,
+		    1px 1px 0 @portlandOrange;
         }
 
         .bar-nav{
