@@ -13,7 +13,17 @@ html, body {
   color: @main-Text;
 }
 
-h1, h2, h3, h4, h5 {
+h1{
+  font-family: 'Russo One', sans-serif;
+  color: @nav-font;
+  text-shadow: // puts border around text in NAV
+		    -1px -1px 0 @portlandOrange,
+		    1px -1px 0 @portlandOrange,
+		    -1px 1px 0 @portlandOrange,
+		    1px 1px 0 @portlandOrange;
+}
+
+h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }

@@ -138,7 +138,11 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #ffffff;
 }
-h1,
+h1 {
+  font-family: 'Russo One', sans-serif;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #FF3333, 1px -1px 0 #FF3333, -1px 1px 0 #FF3333, 1px 1px 0 #FF3333;
+}
 h2,
 h3,
 h4,
@@ -179,7 +183,7 @@ img {
 }
 .navbar {
   overflow: hidden;
-  background-color: red;
+  background-color: #3FA9F5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -195,96 +199,12 @@ img {
 .navbar img {
   width: 40px;
 }
-.header {
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header h1 {
-  text-shadow: -1px -1px 0 #FF3333, 1px -1px 0 #FF3333, -1px 1px 0 #FF3333, 1px 1px 0 #FF3333;
-}
-.header .navIMG {
-  display: flex;
-  justify-content: center;
-  width: 70px;
-}
-@media (max-width: 500px) {
-  .header .navIMG {
-    margin: 0 2%;
-  }
-}
-.header .navIMG img {
-  border-radius: 8px;
-}
-@media (max-width: 500px) {
-  .header .navIMG img {
-    border-radius: 3px;
-  }
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #3FA9F5;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #FF3333;
-}
-.active {
-  background-color: #ffffff;
-  color: #424F46;
-}
-.whole-nav {
-  background: #3FA9F5;
-  margin: 2% 2% 0 2%;
-  border-radius: 5px;
-  border-color: #FF3333;
-}
-.whole-nav .container-nav {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.whole-nav .container-nav h1 {
-  padding-top: 1%;
-  color: #ffffff;
-  text-shadow: -1px -1px 0 #FF3333, 1px -1px 0 #FF3333, -1px 1px 0 #FF3333, 1px 1px 0 #FF3333;
-}
-.whole-nav .container-nav .bar-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  padding: 1.5% 0;
-}
-@media (max-width: 500px) {
-  .whole-nav .container-nav .bar-nav {
-    width: 80%;
-  }
-}
-.whole-nav .container-nav .bar-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-}
 .headerTitle {
-  padding-top: 80px;
+  font-size: 3rem;
+  width: 40%;
+  color: black;
+  border: 1px solid red;
+  margin-top: 60px;
 }
 .mainIMG {
   display: flex;

@@ -1,8 +1,9 @@
 // Navigation code here
 
+// -- NAVIGATION -- //
 .navbar{
   overflow:hidden;
-  background-color: red;
+  background-color: @nav-bg;
   position:fixed;
   top:0;
   width:100%;
@@ -18,131 +19,108 @@
   img{
     width:40px;
   }
+  
 }
 
-.header{
-  border:1px solid red;
-  .DF();
-  // flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  h1{
-    text-shadow: // puts border around text in NAV
-		    -1px -1px 0 @portlandOrange,
-		    1px -1px 0 @portlandOrange,
-		    -1px 1px 0 @portlandOrange,
-		    1px 1px 0 @portlandOrange;
-  }
-
-  .navIMG{
-    .displayFlex(center);
-    width:70px;
-    @media @phone{
-        margin:0 2%;
-    }
-
-    img{
-        border-radius:8px;
-
-        @media @phone{
-            border-radius:3px;
-        }
-    }
-}
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: @nav-bg;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-
-    .navIMG{
-      // width:7px;
-    }
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: @font_color;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: @portlandOrange;
-  }
-  
-  .active {
-    background-color: @font_color;
-    color:@outerSpace;
-  }
-
-
-.whole-nav{
-    background:@nav-bg;
-    margin:2% 2% 0 2%;
-    border-radius: 5px;
-    border-color: @nav-border;
-
-    .container-nav{
-        max-width:100%;
-        .DF();
-        flex-direction:column;
-        align-items: center;
-
-        h1{
-            padding-top:1%;
-            color: @nav-font;
-            text-shadow: // puts border around text in NAV
-		    -1px -1px 0 @portlandOrange,
-		    1px -1px 0 @portlandOrange,
-		    -1px 1px 0 @portlandOrange,
-		    1px 1px 0 @portlandOrange;
-        }
-
-        .bar-nav{
-            .displayFlex(space-between);
-            width:50%;
-            padding:1.5% 0;
-
-            @media @phone{
-                width:80%;
-            }
-
-            a{
-                text-decoration: none;
-                color:@font_color;
-                font-weight:bold;
-            }
-        }
-    }
-}
-
+// -- HEADER TITLE -- //
 .headerTitle{
-  padding-top:80px;
+  font-size:3rem;
+  width: 40%;
+  color:black;
+  border:1px solid red;
+  margin-top: 60px;
 }
+
+// -- HEADER IMG -- //
 .mainIMG{
-    .displayFlex(center);
-    padding-top:40px;
-    @media @phone{
-        margin:0 2%;
-    }
+  .displayFlex(center);
+  padding-top:40px;
+  @media @phone{
+      margin:0 2%;
+  }
 
-    img{
-        border-radius:8px;
+  img{
+      border-radius:8px;
 
-        @media @phone{
-            border-radius:3px;
-        }
-    }
+      @media @phone{
+          border-radius:3px;
+      }
+  }
 }
+
+/// --------
+// .header{
+//   border:1px solid red;
+//   .DF();
+//   // flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   h1{
+//     text-shadow: // puts border around text in NAV
+// 		    -1px -1px 0 @portlandOrange,
+// 		    1px -1px 0 @portlandOrange,
+// 		    -1px 1px 0 @portlandOrange,
+// 		    1px 1px 0 @portlandOrange;
+//   }
+
+//   .navIMG{
+//     .displayFlex(center);
+//     width:70px;
+//     @media @phone{
+//         margin:0 2%;
+//     }
+
+//     img{
+//         border-radius:8px;
+
+//         @media @phone{
+//             border-radius:3px;
+//         }
+//     }
+// }
+// }
+
+
+//<!-- ORIGINAL navigation code here -->
+// .whole-nav{
+//     background:@nav-bg;
+//     margin:2% 2% 0 2%;
+//     border-radius: 5px;
+//     border-color: @nav-border;
+
+//     .container-nav{
+//         max-width:100%;
+//         .DF();
+//         flex-direction:column;
+//         align-items: center;
+
+//         h1{
+//             padding-top:1%;
+//             color: @nav-font;
+//             text-shadow: // puts border around text in NAV
+// 		    -1px -1px 0 @portlandOrange,
+// 		    1px -1px 0 @portlandOrange,
+// 		    -1px 1px 0 @portlandOrange,
+// 		    1px 1px 0 @portlandOrange;
+//         }
+
+//         .bar-nav{
+//             .displayFlex(space-between);
+//             width:50%;
+//             padding:1.5% 0;
+
+//             @media @phone{
+//                 width:80%;
+//             }
+
+//             a{
+//                 text-decoration: none;
+//                 color:@font_color;
+//                 font-weight:bold;
+//             }
+//         }
+//     }
+// }
+
+
