@@ -1,11 +1,31 @@
 // Navigation code here
+
+.navbar{
+  overflow:hidden;
+  background-color: red;
+  position:fixed;
+  top:0;
+  width:100%;
+
+  a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  img{
+    width:40px;
+  }
+}
+
 .header{
   border:1px solid red;
   .DF();
   // flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-
 
   h1{
     text-shadow: // puts border around text in NAV
@@ -108,8 +128,12 @@ ul {
     }
 }
 
+.headerTitle{
+  padding-top:80px;
+}
 .mainIMG{
     .displayFlex(center);
+    padding-top:40px;
     @media @phone{
         margin:0 2%;
     }
