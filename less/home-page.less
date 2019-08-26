@@ -2,125 +2,125 @@
 
 .home {
 
-    .intro {
-  
-      h2 {
-        padding: 15px;
-        @media @phone{
-          font-size:@mobile-font-size;
-          text-align:left;
-        }
-      }
-  
-      p {
-        padding:0 15px;
-      }
-    
-    }
-  
-    .space-images {
-      .DF();
-      flex-wrap: wrap;
-      width: 100%;
-  
-      @media @phone{
-        img.sky,img.launch{
-          display:none;
-        }
-      }
-      img {
-        width: 28%;
-        margin: 20px 2.5%;
-        border-radius: 20px;
-        height: 100%;
-  
-        @media @phone{
-          width:100%;
-        }
-      }
-    }
-  
-    .visit-planets {
+  .intro {
+
+    h2 {
       padding: 15px;
-  
       @media @phone{
-        padding:5px;
+        font-size:@mobile-font-size;
+        text-align:left;
       }
+    }
+
+    p {
+      padding:0 15px;
+    }
   
+  }
+
+  .space-images {
+    .DF();
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media @phone{
+      img.sky,img.launch{
+        display:none;
+      }
+    }
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+
+      @media @phone{
+        width:100%;
+      }
+    }
+  }
+
+  .visit-planets {
+    padding: 15px;
+
+    @media @phone{
+      padding:5px;
+    }
+
+    h3 {
+      margin-top: 11px;
+      @media @phone{
+        font-size:@mobile-font-size;
+        text-align:left;
+        padding:2%;
+      }
+    }
+
+    p {
+      margin-top: 13px;
+      @media @phone{
+        padding:0 2%;
+      }
+    }
+  }
+
+  .walk {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 15px;
+    .displayFlex(center);
+  
+    @media @phone{
+      .DF();
+      align-items:center;
+      flex-direction:column-reverse;
+
+    }
+
+    .walk-text {
+      width: 50%;
+      
+      @media @phone{
+        width:100%;
+      }
       h3 {
-        margin-top: 11px;
+        
         @media @phone{
           font-size:@mobile-font-size;
           text-align:left;
           padding:2%;
         }
       }
-  
+
       p {
-        margin-top: 13px;
+        margin-bottom: 26px;
+
         @media @phone{
           padding:0 2%;
         }
       }
-    }
-  
-    .walk {
-      margin-top: 60px;
-      border-top: 1px solid @main-border-color;
-      padding: 15px;
-      .displayFlex(center);
-    
-      @media @phone{
-        .DF();
-        align-items:center;
-        flex-direction:column-reverse;
-  
-      }
-  
-      .walk-text {
-        width: 50%;
-        
+
+      .btn {
+        .button(@btn-bg-color, @wild-sand);
         @media @phone{
           width:100%;
         }
-        h3 {
-          
-          @media @phone{
-            font-size:@mobile-font-size;
-            text-align:left;
-            padding:2%;
-          }
-        }
-  
-        p {
-          margin-bottom: 26px;
-  
-          @media @phone{
-            padding:0 2%;
-          }
-        }
-  
-        .btn {
-          .button(@btn-bg-color, @wild-sand);
-          @media @phone{
-            width:100%;
-          }
+      }
+    }
+
+    .walk-img {
+      width: 46%;
+      margin-left: 4%;
+      
+      @media @phone {
+          width:100%;
         }
       }
-  
-      .walk-img {
-        width: 46%;
-        margin-left: 4%;
-        
-        @media @phone {
-            width:100%;
-          }
-        }
-      
-      img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-        }
+    
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
     }
-}
+  }
