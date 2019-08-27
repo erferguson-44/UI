@@ -219,6 +219,11 @@ li a:hover {
   animation-fill-mode: both;
   top: 30px;
 }
+@media (max-width: 500px) {
+  .whole-nav .homer {
+    display: none;
+  }
+}
 @keyframes run {
   from {
     transform: translateX(200px);
@@ -265,6 +270,7 @@ li a:hover {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
+  font-size: 2rem;
 }
 .mainIMG {
   display: flex;
@@ -424,4 +430,33 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.teamPics {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+.teamPics2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+.teamPics3 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .teamPics,
+  .teamPics2,
+  .teamPics3 {
+    flex-direction: column;
+  }
+  .size {
+    width: 100%;
+    padding: 20px;
+  }
 }

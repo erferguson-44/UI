@@ -45,12 +45,16 @@ ul {
       animation-delay: 1s;
       animation-fill-mode: both;
       top: 30px;
-      }
-      
+        }
+      @media @phone{
+        .homer{
+       display: none;
+        }
+    }
   @keyframes run{
       from{transform: translateX(200px)}
       to{transform: translateX(1000px)}
-  }
+    }
 
     .container-nav{
         max-width:100%;
@@ -81,8 +85,6 @@ ul {
           }
       }
      
-
-
         .bar-nav{
             .displayFlex(space-between);
             width:50%;
@@ -96,6 +98,7 @@ ul {
                 text-decoration: none;
                 color:@font_color;
                 font-weight:bold;
+                font-size:2rem;
             }
         }
     }
