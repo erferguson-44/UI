@@ -206,6 +206,12 @@ img {
 .navbar a:hover {
   background-color: #FF3333;
 }
+.navbar a:active {
+  background-color: #FFD51D;
+  color: #3FA9F5;
+  box-shadow: 0 5px #424F46;
+  transform: translateY(4px);
+}
 .navbar img {
   width: 80px;
 }
