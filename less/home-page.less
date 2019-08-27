@@ -6,6 +6,9 @@
 
     h2 {
       padding: 15px;
+      display:flex;
+      justify-content: center;
+
       @media @phone{
         font-size:@mobile-font-size;
         text-align:left;
@@ -54,13 +57,15 @@
 
   .visit-planets {
     padding: 15px;
-
     @media @phone{
       padding:5px;
     }
 
     h3 {
       margin-top: 11px;
+      display:flex;
+      justify-content: center;
+
       @media @phone{
         font-size:@mobile-font-size;
         text-align:left;
@@ -77,11 +82,17 @@
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    margin-top: 30px;
+    // border-top: 1px solid @main-border-color;
     padding: 15px;
     .displayFlex(center);
   
+    h3 {
+      margin-top: 11px;
+      // display:flex;
+      // justify-content: center;
+    }
+
     @media @phone{
       .DF();
       align-items:center;

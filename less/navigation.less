@@ -15,11 +15,10 @@
 
   @media @tablet{
     flex-direction:column;
-    height:250px;
+    height:190px;
   }
 
   a{
-    border:1px solid red;
     float: left;
     display: block;
     color: #f2f2f2;
@@ -35,8 +34,9 @@
       // color:@portlandOrange;
     }
     &:active{
-      background-color: @background;
-      color:@margesHair;
+      background-color: @margesHair;
+      color:@font_color;
+      border:1px solid @portlandOrange;
       box-shadow: 0 5px @outerSpace;
       transform: translateY(4px);
     }
@@ -54,7 +54,6 @@
   font-size:3rem;
   width: 360px;
   text-align:center;
-  border:1px solid red;
 }
 
 // -- HEADER IMG -- //
@@ -63,7 +62,7 @@
   padding-top:125px;
 
   @media @tablet{
-    padding-top:250px
+    padding-top:200px
   }
   @media @phone{
       margin:0 2%;
