@@ -243,6 +243,7 @@ img {
 footer {
   background-color: #D1B271;
   color: #424F46;
+  border-radius: 10px;
   width: 100%;
   height: 90px;
   display: flex;
