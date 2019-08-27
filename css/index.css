@@ -198,8 +198,13 @@ img {
   color: #f2f2f2;
   font-weight: bold;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
+  border-radius: 8px;
+  transition-duration: 0.2s;
+}
+.navbar a:hover {
+  background-color: #FF3333;
 }
 .navbar img {
   width: 80px;
