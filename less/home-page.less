@@ -15,28 +15,40 @@
     p {
       padding:0 15px;
     }
-  
   }
 
   .space-images {
     .DF();
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
 
-    @media @phone{
-      img.sky,img.launch{
+    .blast{
+      width:150px;
+    }
+    .sky{
+      width:200px;
+    }
+    .launch{
+      width:225px;
+    }
+
+    @media @tablet2{
+      img.blast{
         display:none;
       }
+    }
+    @media @phone{
+      img.sky,img.blast{
+        display:none;
+      }
+      justify-content: center;
     }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-
-      @media @phone{
-        width:100%;
-      }
     }
   }
 
