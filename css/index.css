@@ -238,6 +238,11 @@ img {
   justify-content: center;
   padding-top: 125px;
 }
+@media (max-width: 770px) {
+  .mainIMG {
+    padding-top: 250px;
+  }
+}
 @media (max-width: 500px) {
   .mainIMG {
     margin: 0 2%;
