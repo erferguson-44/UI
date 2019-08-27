@@ -135,7 +135,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'simpsonfontregular', sans-serif;
   color: #ffffff;
 }
 h1 {
@@ -393,7 +393,7 @@ footer img {
   }
 }
 .home .walk .walk-text .btn {
-  background: #FF3333;
+  background: #3FA9F5;
   color: #ffffff;
   width: 40%;
   border-radius: 10px;
