@@ -181,7 +181,7 @@ img {
     border-image: linear-gradient(to bottom, #3FA9F5, white);
   }
 }
-.navbar {
+.navContainer {
   overflow: hidden;
   background-color: #3FA9F5;
   position: fixed;
@@ -192,7 +192,14 @@ img {
   justify-content: space-evenly;
   align-items: center;
 }
-.navbar a {
+@media (max-width: 770px) {
+  .navContainer {
+    background: black;
+    flex-direction: column;
+    height: 250px;
+  }
+}
+.navContainer a {
   border: 1px solid red;
   float: left;
   display: block;
@@ -204,21 +211,26 @@ img {
   border-radius: 8px;
   transition-duration: 0.2s;
 }
-.navbar a:hover {
+.navContainer a:hover {
   background-color: #FF3333;
 }
-.navbar a:active {
+.navContainer a:active {
   background-color: #FFD51D;
   color: #3FA9F5;
   box-shadow: 0 5px #424F46;
   transform: translateY(4px);
 }
-.navbar img {
+.navContainer img {
   width: 80px;
+}
+@media (max-width: 770px) {
+  .navContainer img {
+    width: 40px;
+  }
 }
 .headerTitle {
   font-size: 3rem;
-  width: 30%;
+  width: 360px;
   text-align: center;
   border: 1px solid red;
 }
