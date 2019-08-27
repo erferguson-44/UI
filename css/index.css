@@ -210,6 +210,23 @@ li a:hover {
   border-radius: 5px;
   border-color: #FF3333;
 }
+.whole-nav .homer {
+  position: absolute;
+  left: 0px;
+  animation-name: run;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes run {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
 .whole-nav .container-nav {
   max-width: 100%;
   display: flex;
@@ -217,15 +234,27 @@ li a:hover {
   align-items: center;
 }
 .whole-nav .container-nav h1 {
+  font-size: 3rem;
   padding-top: 1%;
   color: #ffffff;
   text-shadow: -1px -1px 0 #FF3333, 1px -1px 0 #FF3333, -1px 1px 0 #FF3333, 1px 1px 0 #FF3333;
+  animation: type 1s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 12ch;
+  }
 }
 .whole-nav .container-nav .bar-nav {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  padding: 1.5% 0;
+  padding: 3% 0;
 }
 @media (max-width: 500px) {
   .whole-nav .container-nav .bar-nav {
