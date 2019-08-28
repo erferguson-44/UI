@@ -491,7 +491,7 @@ footer {
     transform: translateY(-220px);
   }
   to {
-    transform: translate(850px, 550px);
+    transform: translate(850px, 500px);
   }
 }
 .drinkingHomer {
@@ -542,7 +542,7 @@ footer {
     transform: translate(2000px, -2000px);
   }
   to {
-    transform: translate(370px, 190px);
+    transform: translate(370px, 150px);
   }
 }
 .maggie {
@@ -559,10 +559,10 @@ footer {
     transform: translate(2000px, -2000px);
   }
   to {
-    transform: translate(400px, 450px);
+    transform: translate(300px, 400px);
   }
 }
-.grandpa {
+.toughGuy {
   position: absolute;
   left: 0px;
   animation-name: pop;
@@ -576,7 +576,7 @@ footer {
     transform: translate(2000px);
   }
   to {
-    transform: translate(790px, 300px);
+    transform: translate(600px, 350px);
   }
 }
 @media (max-width: 500px) {
