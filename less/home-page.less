@@ -82,17 +82,12 @@
   }
 
   .walk {
-    border:1px solid purple;
     margin-top: 30px;
-    // border-top: 1px solid @main-border-color;
     padding: 15px;
     .displayFlex(center);
   
     h3 {
-      border:1px solid red;
       margin-top: 11px;
-      // display:flex;
-      // justify-content: center;
     }
 
     @media @tablet{
@@ -107,15 +102,12 @@
     }
 
     .walk-text {
-      border:1px solid red;
       width: 50%;
       
       @media @tablet{
         width:100%;
       }
-      // @media @phone{
-      //   width:100%;
-      // }
+      
       h3 {
         text-align:center;
 
@@ -136,8 +128,7 @@
 
       .btn {
         .button(@btn-bg-color, @font_color);
-        border:1px solid red;
-        
+
         @media @tablet{
           width:100%;
         }
@@ -145,23 +136,18 @@
     }
 
     .walk-img {
-      border:1px solid red;
-      // display:flex;
-      // flex-direction:column;
-      // justify-content: center;
       width: 50%;
-      // margin-left: 4%;
+      padding-top:140px;
       
       @media @tablet {
           width:100%;
+          padding-top:0;
         }
       }
     
-    img {
-      border:1px solid red;  
+    img { 
       width: 100%;
       height: auto;
-      // border-radius: 10px;
       }
     }
   }
