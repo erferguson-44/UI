@@ -1,0 +1,120 @@
+// Navigation code here
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+
+.whole-nav{
+    background:@nav-bg;
+    margin:2% 2% 0 2%;
+    border-radius: 5px;
+    border-color: @nav-border;
+
+    .homer{
+      position: absolute;
+      left: 0px;
+      animation-name: run;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+      top: 30px;
+        }
+      @media @phone{
+        .homer{
+       display: none;
+        }
+    }
+  @keyframes run{
+      from{transform: translateX(200px)}
+      to{transform: translateX(1000px)}
+    }
+
+    .container-nav{
+        max-width:100%;
+        .DF();
+        flex-direction:column;
+        align-items: center;
+
+        h1{
+            font-size:3rem;
+            padding-top:1%;
+            color: @nav-font;
+            text-shadow: // puts border around text in NAV
+		        -1px -1px 0 @portlandOrange,
+		        1px -1px 0 @portlandOrange,
+		        -1px 1px 0 @portlandOrange,
+            1px 1px 0 @portlandOrange;
+            animation: type 1s;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    
+        @keyframes type {
+          0%{
+              width:0ch;
+          }
+          100% {
+              width: 12ch;
+          }
+      }
+     
+        .bar-nav{
+            .displayFlex(space-between);
+            width:50%;
+            padding:3% 0;
+
+            @media @phone{
+                width:80%;
+            }
+
+            a{
+                text-decoration: none;
+                color:@font_color;
+                font-weight:bold;
+                font-size:2rem;
+            }
+        }
+    }
+}
+
+.mainIMG{
+    .displayFlex(center);
+    @media @phone{
+        margin:0 2%;
+    }
+
+    img{
+        border-radius:8px;
+
+        @media @phone{
+            border-radius:3px;
+        }
+    }
+}
