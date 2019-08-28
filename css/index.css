@@ -219,17 +219,36 @@ li a:hover {
   animation-fill-mode: both;
   top: 30px;
 }
-@media (max-width: 500px) {
-  .whole-nav .homer {
-    display: none;
-  }
-}
 @keyframes run {
   from {
     transform: translateX(200px);
   }
   to {
     transform: translateX(1000px);
+  }
+}
+@media (max-width: 1000px) {
+  .whole-nav .homer {
+    position: absolute;
+    left: 0px;
+    animation-name: run;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+}
+@keyframes run {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+@media (max-width: 500px) {
+  .whole-nav .homer {
+    display: none;
   }
 }
 .whole-nav .container-nav {
@@ -456,7 +475,7 @@ footer {
   .purpleHair,
   .drinkingHomer,
   .marge,
-  grandpa {
+  .toughGuy {
     display: none;
   }
 }
@@ -477,6 +496,24 @@ footer {
     transform: translate(850px, 150px);
   }
 }
+@media (max-width: 1000px) {
+  .lisa {
+    position: absolute;
+    left: 0px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  }
+  @keyframes dance {
+    from {
+      transform: translateY(1000px);
+    }
+    to {
+      transform: translate(550px, 120px);
+    }
+  }
+}
 .bart {
   position: absolute;
   left: 0px;
@@ -484,7 +521,6 @@ footer {
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: both;
-  top: 30px;
 }
 @keyframes fly {
   from {
@@ -492,6 +528,25 @@ footer {
   }
   to {
     transform: translate(850px, 500px);
+  }
+}
+@media (max-width: 1000px) {
+  .bart {
+    position: absolute;
+    left: 0px;
+    animation-name: fly;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes fly {
+    from {
+      transform: translateY(-220px);
+    }
+    to {
+      transform: translate(670px, 520px);
+    }
   }
 }
 .drinkingHomer {
@@ -511,6 +566,25 @@ footer {
     transform: translate(250px, 600px);
   }
 }
+@media (max-width: 1000px) {
+  .drinkingHomer {
+    position: absolute;
+    left: 0px;
+    animation-name: drink;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes drink {
+    from {
+      transform: translate(1000px, -1000px);
+    }
+    to {
+      transform: translate(175px, 550px);
+    }
+  }
+}
 .purpleHair {
   position: absolute;
   left: 0px;
@@ -526,6 +600,25 @@ footer {
   }
   to {
     transform: translate(600px, 650px);
+  }
+}
+@media (max-width: 1000px) {
+  .purpleHair {
+    position: absolute;
+    left: 0px;
+    animation-name: smile;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes smile {
+    from {
+      transform: translate(-220px);
+    }
+    to {
+      transform: translate(450px, 550px);
+    }
   }
 }
 .marge {
@@ -562,7 +655,45 @@ footer {
     transform: translate(300px, 400px);
   }
 }
-.toughGuy {
+@media (max-width: 1000px) {
+  .maggie {
+    position: absolute;
+    left: 0px;
+    animation-name: baby;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes baby {
+    from {
+      transform: translate(2000px, -2000px);
+    }
+    to {
+      transform: translate(200px, 350px);
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .marge {
+    position: absolute;
+    left: 0px;
+    animation-name: pose;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes pose {
+    from {
+      transform: translate(2000px, -2000px);
+    }
+    to {
+      transform: translate(260px, 120px);
+    }
+  }
+}
+.badBart {
   position: absolute;
   left: 0px;
   animation-name: pop;
@@ -576,7 +707,26 @@ footer {
     transform: translate(2000px);
   }
   to {
-    transform: translate(600px, 350px);
+    transform: translate(600px, 750px);
+  }
+}
+@media (max-width: 1000px) {
+  .toughGuy {
+    position: absolute;
+    left: 0px;
+    animation-name: pop;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes pop {
+    from {
+      transform: translate(2000px);
+    }
+    to {
+      transform: translate(450px, 350px);
+    }
   }
 }
 @media (max-width: 500px) {

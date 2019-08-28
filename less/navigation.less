@@ -46,14 +46,33 @@ ul {
       animation-fill-mode: both;
       top: 30px;
         }
-      @media @phone{
-        .homer{
-       display: none;
-        }
-    }
+     
   @keyframes run{
       from{transform: translateX(200px)}
       to{transform: translateX(1000px)}
+    }
+    @media @desktop{
+    .homer{
+      position: absolute;
+      left: 0px;
+      animation-name: run;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+      top: 30px;
+        }
+      } 
+    
+    @keyframes run{
+      from{transform: translateX(100px)}
+      to{transform: translateX(800px)}
+    }
+    
+
+    @media @phone{
+    .homer{
+   display: none;
+      }
     }
 
     .container-nav{
