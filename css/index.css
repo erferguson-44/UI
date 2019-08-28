@@ -424,6 +424,9 @@ footer img {
   box-shadow: 0 5px #424F46;
   transform: translateY(4px);
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+}
 @media (max-width: 770px) {
   .home .walk .walk-text .btn {
     width: 100%;
