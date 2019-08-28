@@ -6,6 +6,9 @@
 
     h2 {
       padding: 15px;
+      display:flex;
+      justify-content: center;
+
       @media @phone{
         font-size:@mobile-font-size;
         text-align:left;
@@ -15,40 +18,54 @@
     p {
       padding:0 15px;
     }
-  
   }
 
   .space-images {
     .DF();
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
 
-    @media @phone{
-      img.sky,img.launch{
+    .blast{
+      width:150px;
+    }
+    .sky{
+      width:200px;
+    }
+    .launch{
+      width:225px;
+    }
+
+    @media @tablet2{
+      img.blast{
         display:none;
       }
+    }
+    @media @phone{
+      img.sky,img.blast{
+        display:none;
+      }
+      justify-content: center;
     }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-
-      @media @phone{
-        width:100%;
-      }
     }
   }
 
   .visit-planets {
     padding: 15px;
-
     @media @phone{
       padding:5px;
     }
 
     h3 {
       margin-top: 11px;
+      display:flex;
+      justify-content: center;
+
       @media @phone{
         font-size:@mobile-font-size;
         text-align:left;
@@ -65,29 +82,38 @@
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    margin-top: 30px;
     padding: 15px;
     .displayFlex(center);
   
+    h3 {
+      margin-top: 11px;
+    }
+
+    @media @tablet{
+      .DF();
+      align-items:center;
+      flex-direction:column-reverse;
+    }
     @media @phone{
       .DF();
       align-items:center;
       flex-direction:column-reverse;
-
     }
 
     .walk-text {
       width: 50%;
       
-      @media @phone{
+      @media @tablet{
         width:100%;
       }
+      
       h3 {
-        
-        @media @phone{
+        text-align:center;
+
+        @media @tablet{
           font-size:@mobile-font-size;
-          text-align:left;
+          text-align:center;
           padding:2%;
         }
       }
@@ -102,25 +128,28 @@
 
       .btn {
         .button(@btn-bg-color, @font_color);
-        @media @phone{
+        a{
+          text-decoration: none;
+        }
+        @media @tablet{
           width:100%;
         }
       }
     }
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
+      width: 50%;
+      padding-top:140px;
       
-      @media @phone {
+      @media @tablet {
           width:100%;
+          padding-top:0;
         }
       }
     
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+    img { 
+      width: 100%;
+      height: auto;
       }
     }
   }
