@@ -260,9 +260,11 @@ footer .copyright {
 }
 footer .lambda {
   width: 125px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
 }
 footer .lambda p {
   text-decoration: none;
