@@ -113,12 +113,12 @@
       @media @tablet{
         width:100%;
       }
-      @media @phone{
-        width:100%;
-      }
+      // @media @phone{
+      //   width:100%;
+      // }
       h3 {
         text-align:center;
-        
+
         @media @tablet{
           font-size:@mobile-font-size;
           text-align:center;
@@ -136,8 +136,9 @@
 
       .btn {
         .button(@btn-bg-color, @font_color);
+        border:1px solid red;
         
-        @media @phone{
+        @media @tablet{
           width:100%;
         }
       }
