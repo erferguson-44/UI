@@ -135,11 +135,11 @@ html {
 }
 html,
 body {
-  font-family: 'simpsonfontregular', sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   color: #ffffff;
 }
 h1 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   color: #ffffff;
   text-shadow: -1px -1px 0 #FF3333, 1px -1px 0 #FF3333, -1px 1px 0 #FF3333, 1px 1px 0 #FF3333;
 }
@@ -147,7 +147,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   color: #3FA9F5;
 }
 h1 {
@@ -356,12 +356,14 @@ footer img {
   }
 }
 .home .walk {
+  border: 1px solid purple;
   margin-top: 30px;
   padding: 15px;
   display: flex;
   justify-content: center;
 }
 .home .walk h3 {
+  border: 1px solid red;
   margin-top: 11px;
 }
 @media (max-width: 500px) {
@@ -372,7 +374,13 @@ footer img {
   }
 }
 .home .walk .walk-text {
+  border: 1px solid red;
   width: 50%;
+}
+@media (max-width: 770px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
@@ -416,6 +424,7 @@ footer img {
   }
 }
 .home .walk .walk-img {
+  border: 1px solid red;
   width: 46%;
   margin-left: 4%;
 }
@@ -425,6 +434,7 @@ footer img {
   }
 }
 .home .walk img {
+  border: 1px solid red;
   width: 100%;
   height: auto;
   border-radius: 10px;

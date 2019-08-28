@@ -82,12 +82,14 @@
   }
 
   .walk {
+    border:1px solid purple;
     margin-top: 30px;
     // border-top: 1px solid @main-border-color;
     padding: 15px;
     .displayFlex(center);
   
     h3 {
+      border:1px solid red;
       margin-top: 11px;
       // display:flex;
       // justify-content: center;
@@ -100,8 +102,12 @@
     }
 
     .walk-text {
+      border:1px solid red;
       width: 50%;
       
+      @media @tablet{
+        width:100%;
+      }
       @media @phone{
         width:100%;
       }
@@ -132,6 +138,10 @@
     }
 
     .walk-img {
+      border:1px solid red;
+      // display:flex;
+      // flex-direction:column;
+      // justify-content: center;
       width: 46%;
       margin-left: 4%;
       
@@ -141,9 +151,10 @@
       }
     
     img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+      border:1px solid red;  
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
       }
     }
   }
