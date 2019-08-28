@@ -508,7 +508,7 @@ footer {
     transform: translate(1000px, -1000px);
   }
   to {
-    transform: translate(250px, 550px);
+    transform: translate(250px, 600px);
   }
 }
 .purpleHair {
@@ -525,7 +525,7 @@ footer {
     transform: translate(-220px);
   }
   to {
-    transform: translate(550px, 650px);
+    transform: translate(600px, 650px);
   }
 }
 .marge {
@@ -542,7 +542,7 @@ footer {
     transform: translate(2000px, -2000px);
   }
   to {
-    transform: translate(250px, 150px);
+    transform: translate(370px, 190px);
   }
 }
 .maggie {
@@ -559,7 +559,7 @@ footer {
     transform: translate(2000px, -2000px);
   }
   to {
-    transform: translate(450px, 250px);
+    transform: translate(400px, 450px);
   }
 }
 .grandpa {
@@ -576,7 +576,7 @@ footer {
     transform: translate(2000px);
   }
   to {
-    transform: translate(720px, 300px);
+    transform: translate(790px, 300px);
   }
 }
 @media (max-width: 500px) {
