@@ -1,32 +1,37 @@
 
-.teamPics{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding: 15px;
-}
+    .teamPics{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 15px;
+    }
 
-.teamPics2{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding: 15px;
-}
+    .teamPics2{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 15px;
+    }
 
-.teamPics3{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding: 15px;
-}
-.lisa{
-    position: absolute;
-    left: 0px;
-    animation-name: dance;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    top: 30px;
+    .teamPics3{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    @media @phone{
+        .lisa, .bart, .maggie, .purpleHair, .drinkingHomer, .marge, grandpa{
+            display: none;
+        }
+    }
+    .lisa{
+        position: absolute;
+        left: 0px;
+        animation-name: dance;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        top: 30px;
     }
     @keyframes dance{
         from{transform: translateY(1000px)}
@@ -42,80 +47,82 @@
         animation-fill-mode: both;
         top: 30px;
         }
-        @keyframes fly{
-            from{transform: translateY(-220px)}
-            to{transform: translate(850px, 550px)}
+    @keyframes fly{
+        from{transform: translateY(-220px)}
+        to{transform: translate(850px, 550px)}
           }
 
-        .drinkingHomer{ 
-            position: absolute;
-            left: 0px;
-            animation-name: drink;
-            animation-duration: 1s;
-            animation-delay: 4s;
-            animation-fill-mode: both;
-            top: 30px;
+    .drinkingHomer{ 
+        position: absolute;
+        left: 0px;
+        animation-name: drink;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        animation-fill-mode: both;
+        top: 30px;
             }
-            @keyframes drink{
-                from{transform: translate(1000px, -1000px)}
-                to{transform: translate(250px, 550px)}
-              }
+    @keyframes drink{
+        from{transform: translate(1000px, -1000px)}
+        to{transform: translate(250px, 550px)}
+            }
                     
-        .purpleHair{
-            position: absolute;
-            left: 0px;
-            animation-name: smile;
-            animation-duration: 1s;
-            animation-delay: 5s;
-            animation-fill-mode: both;
-            top: 30px;
+    .purpleHair{
+        position: absolute;
+        left: 0px;
+        animation-name: smile;
+        animation-duration: 1s;
+        animation-delay: 5s;
+        animation-fill-mode: both;
+        top: 30px;
             }
-              @keyframes smile{
-                from{transform: translate(-220px)}
-                to{transform: translate(550px, 650px)}
-              }
-
-        .marge{
-                  position: absolute;
-                left: 0px;
-                animation-name: pose;
-                animation-duration: 1s;
-                animation-delay: 6s;
-                animation-fill-mode: both;
-                top: 30px;
-                }
-                @keyframes pose{
-                    from{transform: translate(2000px, -2000px)}
-                    to{transform: translate(250px, 150px)}
-                  }
-
-        .maggie{ position: absolute;
-                left: 0px;
-                animation-name: baby;
-                animation-duration: 1s;
-                animation-delay: 7s;
-                animation-fill-mode: both;
-                top: 30px;
+    @keyframes smile{
+        from{transform: translate(-220px)}
+        to{transform: translate(550px, 650px)}
             }
-            @keyframes baby{
-                from{transform: translate(2000px, -2000px)}
-                to{transform: translate(450px, 250px)}
-              }
 
-        .grandpa{
-                position: absolute;
-                left: 0px;
-                animation-name: pop;
-                animation-duration: 1s;
-                animation-delay: 8s;
-                animation-fill-mode: both;
-                top: 30px;}
-                @keyframes pop{
-                    from{transform: translate(2000px)}
-                    to{transform: translate(720px, 300px)}
+    .marge{
+        position: absolute;
+        left: 0px;
+        animation-name: pose;
+        animation-duration: 1s;
+        animation-delay: 6s;
+        animation-fill-mode: both;
+        top: 30px;
+            }
+        @keyframes pose{
+            from{transform: translate(2000px, -2000px)}
+            to{transform: translate(250px, 150px)}
                   }
+        
+    .maggie{ 
+        position: absolute;
+        left: 0px;
+        animation-name: baby;
+        animation-duration: 1s;
+        animation-delay: 7s;
+        animation-fill-mode: both;
+        top: 30px;
+          }
+    @keyframes baby{
+        from{transform: translate(2000px, -2000px)}
+        to{transform: translate(450px, 250px)}
+          }
 
-@media @phone{
+    .grandpa{
+        position: absolute;
+        left: 0px;
+        animation-name: pop;
+        animation-duration: 1s;
+        animation-delay: 8s;
+        animation-fill-mode: both;
+        top: 30px;
+            }
+    @keyframes pop{
+        from{transform: translate(2000px)}
+        to{transform: translate(720px, 300px)}
+            }
+
+    @media @phone{
     .teamPics, .teamPics2, .teamPics3{
         flex-direction: column;
     }
