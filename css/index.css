@@ -446,3 +446,345 @@ footer img {
   width: 100%;
   height: auto;
 }
+.header {
+  padding-top: 125px;
+  display: flex;
+  justify-content: center;
+}
+.mainIMG {
+  display: none;
+}
+.cartoons {
+  border: 1px solid red;
+}
+.teamPics img,
+.teamPics2 img,
+.teamPics3 img {
+  border-radius: 10px;
+}
+.teamPics {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+.teamPics div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teamPics p {
+  border: 1px solid red;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.teamPics2 {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+.teamPics2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teamPics2 p {
+  border: 1px solid red;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.teamPics3 {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+.teamPics3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teamPics3 p {
+  border: 1px solid red;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .lisa,
+  .bart,
+  .maggie,
+  .purpleHair,
+  .drinkingHomer,
+  .marge,
+  .toughGuy {
+    display: none;
+  }
+}
+.lisa {
+  position: absolute;
+  left: 0px;
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes dance {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translate(850px, 150px);
+  }
+}
+@media (max-width: 770px) {
+  .lisa {
+    position: absolute;
+    left: 0px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  }
+  @keyframes dance {
+    from {
+      transform: translateY(1000px);
+    }
+    to {
+      transform: translate(550px, 120px);
+    }
+  }
+}
+.bart {
+  position: absolute;
+  left: 0px;
+  animation-name: fly;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+@keyframes fly {
+  from {
+    transform: translateY(-220px);
+  }
+  to {
+    transform: translate(850px, 500px);
+  }
+}
+@media (max-width: 770px) {
+  .bart {
+    position: absolute;
+    left: 0px;
+    animation-name: fly;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes fly {
+    from {
+      transform: translateY(-220px);
+    }
+    to {
+      transform: translate(670px, 520px);
+    }
+  }
+}
+.drinkingHomer {
+  position: absolute;
+  left: 0px;
+  animation-name: drink;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes drink {
+  from {
+    transform: translate(1000px, -1000px);
+  }
+  to {
+    transform: translate(250px, 600px);
+  }
+}
+@media (max-width: 770px) {
+  .drinkingHomer {
+    position: absolute;
+    left: 0px;
+    animation-name: drink;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes drink {
+    from {
+      transform: translate(1000px, -1000px);
+    }
+    to {
+      transform: translate(175px, 550px);
+    }
+  }
+}
+.purpleHair {
+  position: absolute;
+  left: 0px;
+  animation-name: smile;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes smile {
+  from {
+    transform: translate(-220px);
+  }
+  to {
+    transform: translate(600px, 650px);
+  }
+}
+@media (max-width: 770px) {
+  .purpleHair {
+    position: absolute;
+    left: 0px;
+    animation-name: smile;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes smile {
+    from {
+      transform: translate(-220px);
+    }
+    to {
+      transform: translate(450px, 550px);
+    }
+  }
+}
+.marge {
+  position: absolute;
+  left: 0px;
+  animation-name: pose;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes pose {
+  from {
+    transform: translate(2000px, -2000px);
+  }
+  to {
+    transform: translate(370px, 150px);
+  }
+}
+.maggie {
+  position: absolute;
+  left: 0px;
+  animation-name: baby;
+  animation-duration: 1s;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes baby {
+  from {
+    transform: translate(2000px, -2000px);
+  }
+  to {
+    transform: translate(300px, 400px);
+  }
+}
+@media (max-width: 770px) {
+  .maggie {
+    position: absolute;
+    left: 0px;
+    animation-name: baby;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes baby {
+    from {
+      transform: translate(2000px, -2000px);
+    }
+    to {
+      transform: translate(200px, 350px);
+    }
+  }
+}
+@media (max-width: 770px) {
+  .marge {
+    position: absolute;
+    left: 0px;
+    animation-name: pose;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes pose {
+    from {
+      transform: translate(2000px, -2000px);
+    }
+    to {
+      transform: translate(260px, 120px);
+    }
+  }
+}
+.badBart {
+  position: absolute;
+  left: 0px;
+  animation-name: pop;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  animation-fill-mode: both;
+  top: 30px;
+}
+@keyframes pop {
+  from {
+    transform: translate(2000px);
+  }
+  to {
+    transform: translate(600px, 750px);
+  }
+}
+@media (max-width: 770px) {
+  .toughGuy {
+    position: absolute;
+    left: 0px;
+    animation-name: pop;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    top: 30px;
+  }
+  @keyframes pop {
+    from {
+      transform: translate(2000px);
+    }
+    to {
+      transform: translate(450px, 350px);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .teamPics,
+  .teamPics2,
+  .teamPics3 {
+    flex-direction: column;
+  }
+  .size {
+    width: 100%;
+    padding: 20px;
+  }
+}
