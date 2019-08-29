@@ -509,12 +509,6 @@ footer img {
     width: 80px;
   }
 }
-.teamPics .teamMember {
-  border: 1px solid red;
-}
-.teamPics .teamMember p {
-  border: 1px solid red;
-}
 .teamPics2 {
   display: flex;
   justify-content: space-evenly;
@@ -541,12 +535,6 @@ footer img {
     width: 80px;
   }
 }
-.teamPics2 .teamMember {
-  border: 1px solid red;
-}
-.teamPics2 .teamMember p {
-  border: 1px solid red;
-}
 .teamPics3 {
   display: flex;
   justify-content: space-evenly;
@@ -572,12 +560,6 @@ footer img {
   .teamPics3 p img {
     width: 80px;
   }
-}
-.teamPics3 .teamMember {
-  border: 1px solid red;
-}
-.teamPics3 .teamMember p {
-  border: 1px solid red;
 }
 @media (max-width: 770px) {
   .lisa,
