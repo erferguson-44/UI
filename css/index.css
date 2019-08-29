@@ -140,8 +140,7 @@ body {
 }
 h1 {
   font-family: 'Gloria Hallelujah', cursive;
-  color: #ffffff;
-  text-shadow: -1px -1px 0 #FF3333, 1px -1px 0 #FF3333, -1px 1px 0 #FF3333, 1px 1px 0 #FF3333;
+  color: #FF3333;
 }
 h2,
 h3,
@@ -458,23 +457,37 @@ footer img {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 770px) {
+  .mainIMG2 {
+    display: none;
+  }
+}
 .mainIMG2 h2 {
   padding-top: 20px;
-}
-.cartoons {
-  border: 1px solid red;
+  width: 500px;
+  text-align: center;
 }
 .teamPics img,
 .teamPics2 img,
 .teamPics3 img {
   border-radius: 10px;
 }
+.teamPics h2,
+.teamPics2 h2,
+.teamPics3 h2 {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
 .teamPics {
-  border: 1px solid red;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 50px;
+}
+@media (max-width: 770px) {
+  .teamPics {
+    padding-top: 125px;
+  }
 }
 .teamPics div {
   display: flex;
@@ -483,12 +496,21 @@ footer img {
   align-items: center;
 }
 .teamPics p {
-  border: 1px solid red;
   font-size: 1rem;
   padding-top: 10px;
 }
-.teamPics2 {
+@media (max-width: 500px) {
+  .teamPics p img {
+    width: 80px;
+  }
+}
+.teamPics .teamMember {
   border: 1px solid red;
+}
+.teamPics .teamMember p {
+  border: 1px solid red;
+}
+.teamPics2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -501,12 +523,21 @@ footer img {
   align-items: center;
 }
 .teamPics2 p {
-  border: 1px solid red;
   font-size: 1rem;
   padding-top: 10px;
 }
-.teamPics3 {
+@media (max-width: 500px) {
+  .teamPics2 p img {
+    width: 80px;
+  }
+}
+.teamPics2 .teamMember {
   border: 1px solid red;
+}
+.teamPics2 .teamMember p {
+  border: 1px solid red;
+}
+.teamPics3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -519,11 +550,21 @@ footer img {
   align-items: center;
 }
 .teamPics3 p {
-  border: 1px solid red;
   font-size: 1rem;
   padding-top: 10px;
 }
 @media (max-width: 500px) {
+  .teamPics3 p img {
+    width: 80px;
+  }
+}
+.teamPics3 .teamMember {
+  border: 1px solid red;
+}
+.teamPics3 .teamMember p {
+  border: 1px solid red;
+}
+@media (max-width: 770px) {
   .lisa,
   .bart,
   .maggie,

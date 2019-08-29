@@ -4,30 +4,49 @@
     justify-content: center;
 }
 .mainIMG2 {
-    // display:none;
     width:40%;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items:center;
+    
+    @media @tablet{
+        display:none;
+    }
 
     h2{
         padding-top:20px;
-    }
+        width:500px;
+        text-align:center;
+        } 
 }
-.cartoons{
-    border:1px solid red;
-}
+
+// // .cartoons{
+// //     border:1px solid red;
+// }
 
 .teamPics img, .teamPics2 img, .teamPics3 img{
     border-radius:10px;
 }
+.teamPics h2, .teamPics2 h2, .teamPics3 h2{
+    font-size:1.5rem;
+    padding:10px 0;
+}
+// .team{
+//     @media @tablet{
+//         padding-top:400px
+//     }
+// }
 .teamPics{
-    border:1px solid red;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
+
+    @media @tablet{
+        padding-top:125px
+    }
+    
 
     div{
         display:flex;
@@ -35,15 +54,27 @@
         justify-content: center;
         align-items:center;
     }
+
     p{
-        border:1px solid red;
         font-size:1rem;
         padding-top: 10px;
+
+        @media @phone{ 
+            img{width:80px;
+            }
+        }
+    }
+    
+    .teamMember{
+        border:1px solid red;
+
+        p{
+            border:1px solid red;
+        }
     }
 }
 
     .teamPics2{
-        border:1px solid red;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -56,14 +87,25 @@
             align-items:center;
         }
         p{
-            border:1px solid red;
             font-size:1rem;
             padding-top: 10px;
+
+            @media @phone{ 
+                img{width:80px;
+                }
+            }
+        }
+        .teamMember{
+            border:1px solid red;
+    
+            p{
+                border:1px solid red;
+            }
         }
     }
+    
 
     .teamPics3{
-        border:1px solid red;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -77,12 +119,23 @@
         }
 
         p{
-            border:1px solid red;
             font-size:1rem;
             padding-top: 10px;
+
+            @media @phone{ 
+                img{width:80px;
+                }
+            }
+        }
+        .teamMember{
+            border:1px solid red;
+    
+            p{
+                border:1px solid red;
+            }
         }
     }
-    @media @phone{
+    @media @tablet{
         .lisa, .bart, .maggie, .purpleHair, .drinkingHomer, .marge, .toughGuy{
             display: none;
         }
