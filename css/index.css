@@ -447,12 +447,19 @@ footer img {
   height: auto;
 }
 .header {
-  padding-top: 125px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
-.mainIMG {
-  display: none;
+.mainIMG2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainIMG2 h2 {
+  padding-top: 20px;
 }
 .cartoons {
   border: 1px solid red;
