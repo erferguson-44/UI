@@ -21,9 +21,6 @@
         } 
 }
 
-// // .cartoons{
-// //     border:1px solid red;
-// }
 
 .teamPics img, .teamPics2 img, .teamPics3 img{
     border-radius:10px;
@@ -32,11 +29,7 @@
     font-size:1.5rem;
     padding:10px 0;
 }
-// .team{
-//     @media @tablet{
-//         padding-top:400px
-//     }
-// }
+
 .teamPics{
     display: flex;
     justify-content: space-evenly;
@@ -46,9 +39,15 @@
     @media @tablet{
         padding-top:125px
     }
+
+    @media @phone{
+        .ghLogo{
+            width:80px;
+        }
+    }
     
 
-    div{
+    .teamMember{
         display:flex;
         flex-direction:column;
         justify-content: center;
@@ -79,6 +78,12 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 50px;
+
+        @media @phone{
+            .ghLogo{
+                width:80px;
+            }
+        }
 
         div{
             display:flex;
@@ -111,6 +116,12 @@
         align-items: center;
         padding: 50px;
 
+        @media @phone{
+            .ghLogo{
+                width:80px;
+            }
+        }
+        
         div{
             display:flex;
             flex-direction:column;
