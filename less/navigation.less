@@ -1,42 +1,67 @@
 // Navigation code here
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+
+// -- NAVIGATION -- //
+
+.navContainer{
+  overflow:hidden;
+  background-color: @nav-bg;
+  position:fixed;
+  top:0;
+  width:100%;
+  height:90px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media @tablet{
+    flex-direction:column;
+    height:190px;
   }
-  
-  li {
+
+  a{
     float: left;
-  }
-  
-  li a {
     display: block;
-    color: white;
+    color: #f2f2f2;
+    font-weight:bold;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
+    border-radius:8px;
+    transition-duration:.2s;
 
+    &:hover{
+      background-color:@portlandOrange;
+    }
+    
+    &:active{
+      background-color: @margesHair;
+      color:@font_color;
+      border:1px solid @portlandOrange;
+      box-shadow: 0 5px @outerSpace;
+      transform: translateY(4px);
+    }
+  }
+  img{
+    width:80px;
+    @media @tablet{
+      width:55px;
+    }
+  }
+}
 
-.whole-nav{
-    background:@nav-bg;
-    margin:2% 2% 0 2%;
-    border-radius: 5px;
-    border-color: @nav-border;
+// -- HEADER TITLE -- //
+.headerTitle{
+  font-size:3rem;
+  width: 360px;
+  text-align:center;
+}
 
+// -- HEADER IMG -- //
+.mainIMG{
+  .displayFlex(center);
+  padding-top:125px;
+
+ antoinette-jones
     .homer{
       position: absolute;
       left: 0px;
@@ -75,65 +100,21 @@ ul {
       }
     }
 
-    .container-nav{
-        max-width:100%;
-        .DF();
-        flex-direction:column;
-        align-items: center;
+  @media @tablet{
+    padding-top:200px
+  }
+  @media @phone{
+      margin:0 2%;
+  }
+ master
 
-        h1{
-            font-size:3rem;
-            padding-top:1%;
-            color: @nav-font;
-            text-shadow: // puts border around text in NAV
-		        -1px -1px 0 @portlandOrange,
-		        1px -1px 0 @portlandOrange,
-		        -1px 1px 0 @portlandOrange,
-            1px 1px 0 @portlandOrange;
-            animation: type 1s;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-    
-        @keyframes type {
-          0%{
-              width:0ch;
-          }
-          100% {
-              width: 12ch;
-          }
+  img{
+      border-radius:8px;
+
+      @media @phone{
+          border-radius:3px;
       }
-     
-        .bar-nav{
-            .displayFlex(space-between);
-            width:50%;
-            padding:3% 0;
-
-            @media @phone{
-                width:80%;
-            }
-
-            a{
-                text-decoration: none;
-                color:@font_color;
-                font-weight:bold;
-                font-size:2rem;
-            }
-        }
-    }
+  }
 }
 
-.mainIMG{
-    .displayFlex(center);
-    @media @phone{
-        margin:0 2%;
-    }
 
-    img{
-        border-radius:8px;
-
-        @media @phone{
-            border-radius:3px;
-        }
-    }
-}
